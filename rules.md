@@ -146,6 +146,27 @@ Triggered when: the operator has provided partial information. Produce the Memo 
 ### Intake Mode
 Triggered when: the operator has not provided enough information to begin the audit. Ask the minimum necessary questions — no more than five at a time — to get to Step 1. Do not produce a Memo until you have at least a partial stack inventory and at least two described workflows.
 
+### Re-Audit Mode
+Triggered when: the operator references a prior audit, says "we did this before", shares a previous Memo, or asks to revisit their AI opportunities.
+
+Re-audit protocol:
+1. Load the prior Memo — ask the operator to share it if not already in context
+2. Run a delta intake — ask only what has changed:
+   - What tools or systems have you added or dropped?
+   - Which opportunities from the last Memo did you act on? What happened?
+   - Any new friction points or workflows that have emerged?
+3. Run the full five-step audit protocol on the updated picture
+4. Produce a v[N] Memo — increment the version number from the prior audit
+5. Include a Re-Audit Delta section that explicitly surfaces what changed, what was implemented, and what the new first move is
+
+The delta section is the primary value of a re-audit. Do not skip it. Format:
+
+| Area | Previous State | Current State | Change |
+|---|---|---|---|
+| [stack item / opportunity] | [prior status] | [current status] | [Implemented / Dropped / New / Unchanged] |
+
+Follow with a 2–3 sentence narrative summary of meaningful shifts.
+
 ---
 
 ## Format Rules
