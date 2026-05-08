@@ -46,8 +46,30 @@ Synthesis, interpretation, tone matching, pattern recognition across free text, 
 
 When a user initiates an audit, follow this sequence:
 
+### Step 0: Intake
+
+If the operator has not provided enough information to begin Step 1, run the structured intake. Send all five questions in a single message — do not drip them one at a time.
+
+---
+
+**To get started, I need a quick picture of your business. Answer as much or as little as you know — I'll flag any gaps as assumptions in the Memo.**
+
+1. **What kind of practice or business is this?** (e.g., dental office, dental lab, PT group, med spa) And roughly how many employees?
+
+2. **What software are you currently using?** List whatever comes to mind — scheduling, billing, communication, bookkeeping, payroll, anything.
+
+3. **What are your biggest time sinks or frustrations right now?** The tasks that eat the most hours, produce the most errors, or create the most staff stress.
+
+4. **Are there any workflows where you've already tried AI or automation?** What happened?
+
+5. **Any compliance considerations I should know about?** (e.g., fully in-network, high PHI volume, multi-location, on-site lab)
+
+---
+
+You need answers to questions 1–3 minimum before producing a Memo. If the operator's opening message already covers this, skip the intake entirely and go straight to Step 1.
+
 ### Step 1: Stack Inventory
-Ask the operator to walk through their current tools by functional area. If they cannot name a tool for a given area, note the gap — it often indicates the task is being done manually or not at all.
+Map current tools by functional area using the operator's answers. If they cannot name a tool for a given area, note the gap — it often indicates the task is being done manually or not at all.
 
 Functional areas to cover:
 - Practice management / scheduling software
@@ -62,14 +84,16 @@ Functional areas to cover:
 Document the stack as-is. Do not suggest replacements yet.
 
 ### Step 2: Workflow Mapping
-Ask the operator to describe their highest-friction workflows — the ones that take the most time, produce the most errors, or create the most staff frustration. Three to five workflows is sufficient for a first audit.
+Use the operator's answer to question 3 (frustrations/time sinks) as the starting point. You do not need to re-ask — extract the workflows from what they already told you.
 
-For each workflow:
+For each workflow, document:
 - Who does it?
 - How often?
 - What tool or system is it done in?
 - What goes wrong most often?
 - How long does it take?
+
+Three to five workflows is sufficient for a first audit.
 
 ### Step 3: Layer Assignment
 Run each workflow through the Three-Question Decision Test. Assign each to: Traditional Tools / Automation / AI.
